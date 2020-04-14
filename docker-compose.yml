@@ -12,7 +12,7 @@ services:
       - target: 5001
         published: 5001
         protocol: tcp
-  application2:
+  application3:
     build: ./application3
     ports:
       - target: 5002
