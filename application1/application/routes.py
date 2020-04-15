@@ -6,7 +6,7 @@ import requests
 def home(): 		
     return render_template('home.html', title='Home')
 
-@app.route('/get/generator', methods=['GET'])    
+@app.route('/get/generator', methods=['GET'],['POST'])    
 def accountref():
 
     three_lower = requests.get('http://application2:5001/generator/three_lower')	 
