@@ -1,8 +1,9 @@
-from flask import render_template
 from application import app
-import requests
+from flask import render_template, requests, Response
+
 
 @app.route('/', methods=['GET'])
+@app.route('/home')
 def home(): 		
     return render_template('home.html', title='Home')
 
