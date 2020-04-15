@@ -1,5 +1,6 @@
-from flask import render_template, requests, Response
 from application import app
+from flask import render_template, request, Response
+
 
 @app.route('/', methods=['GET'])
 @app.route('/home')
