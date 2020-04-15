@@ -3,11 +3,7 @@ from flask import render_template, request, Response
 import requests
 
 
-@app.route('/', methods=['GET'])
-def home(): 		
-    return render_template('home.html', title='Home')
-
-@app.route('/get/generator', methods=['GET'])    
+@app.route('/', methods=['GET'])   
 def accountref():
 
     three_lower = requests.get('http://application2:5001/generator/three_lower')	 
