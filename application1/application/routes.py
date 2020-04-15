@@ -3,7 +3,6 @@ from flask import render_template, request, Response
 
 
 @app.route('/', methods=['GET'])
-@app.route('/home')
 def home(): 		
     return render_template('home.html', title='Home')
 
